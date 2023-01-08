@@ -1,14 +1,14 @@
-<!-- {% extends 'app/Links.html' %} -->
- 
+{% extends 'school/Links.html' %}
+
 {% block content %}
- 
+
 <div class="container ">
- 
+
     <br><br>
 <div class="row">
     <div class="col-md-9">
         <h5>Notice:</h5>
-        
+
         <div class="card card-body">
             <table class="table table-sm">
                 <tr>
@@ -25,19 +25,19 @@
         </div>
     </div>
 </div>
- 
+
 <br><br>
- 
+
 <div class="row">
     <div class="col-md-9">
         <h5>Attendance:</h5>
-        
+
         <div class="card card-body">
             <table class="table table-sm">
                 <tr>
                     <th>Student Id</th>
                     <th>Student Name</th>
-                    <th>Attended Lectures</th>                    
+                    <th>Attended Lectures</th>
                     <th>Total Lectures</th>
                 </tr>
                 {% for a in attendance %}
@@ -52,24 +52,24 @@
         </div>
     </div>
 </div>
- 
+
 <br><br>
- 
+
 <div class="row">
     <div class="col-md-9">
         <h5>Marks:</h5>
-        
+
         <div class="card card-body">
-            
+
             <table class="table table-sm">
                 <tr>
                     <th>Student Id</th>
                     <th>Student Name</th>
-                    <th>Physics Marks</th>      
-                    <th>Chemistry Marks</th>      
-                    <th>Maths Marks</th>      
-                    <th>English Marks</th>      
-                    <th>Computer Marks</th>  
+                    <th>Physics Marks</th>
+                    <th>Chemistry Marks</th>
+                    <th>Maths Marks</th>
+                    <th>English Marks</th>
+                    <th>Computer Marks</th>
                 </tr>
                 {% for m in marks %}
                 <tr>
@@ -86,6 +86,7 @@
             <p> <b>Note:</b> Marks are out of 100</p>
         </div>
     </div>
+</div>
 </div>
 
 
